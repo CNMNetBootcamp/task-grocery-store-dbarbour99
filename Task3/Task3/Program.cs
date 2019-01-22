@@ -21,9 +21,11 @@ namespace Task3
                 numday = numday + 1;
                 do
                 {
+                    
                     Console.WriteLine("How many bottles did you collect on day " + numday + "   Type 0 to finish");
                     tempnum = Console.ReadLine();
                     isNumeric = int.TryParse(tempnum, out int n);
+                    // TODO: You should collect bottles for 7 days only and then return the calculation. 
                     if (isNumeric == false)
                     {
                         Console.WriteLine("Please enter a number");
