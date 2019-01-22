@@ -14,7 +14,6 @@ namespace Task3
             double thecost = 0.10;
             double profit = 0;
             string tempnum = string.Empty;
-
             //input
 
             do
@@ -33,7 +32,8 @@ namespace Task3
                 numberofbottles = int.Parse(tempnum);
                 totalbottles = totalbottles + numberofbottles;
 
-            } while (numberofbottles != 0);
+            //added numday < 7 to let the user only enter 7 days or less
+            } while (numberofbottles != 0 || numday <= 7);
 
 
             //processing
