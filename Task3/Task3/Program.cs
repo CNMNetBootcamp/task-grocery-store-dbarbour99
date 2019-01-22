@@ -34,7 +34,7 @@ namespace Task3
                 numberofbottles = int.Parse(tempnum);
                 totalbottles = totalbottles + numberofbottles;
 
-            //added numday < 7 to let the user only enter 7 days or less
+            //added numday < 7 to let the user only enter 7 days or less 
             } while (numberofbottles != 0 || numday <= 7);
 
 
